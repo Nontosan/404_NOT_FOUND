@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<body>
+  
+  <h1 id="router_name"></h1>
+  <script>
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var router = url.searchParams.get("router");  
+    document.getElementById("router_name").innerHTML = "Router: " + router;
+  </script>
+
+  <form id="myForm">
+    Destination IP: <input type="text" id="myInput">
+  </form>
+  <button onclick="whereToGo()">Submit</button>
+
+  <hr>
+  <p>Result: <span id="result"></p></p>
+  <hr>
+
+  <a id="router_1"></a>
+  <p id="router_1_MAC"></p>
+  <a id="router_2"></a>
+  <p id="router_2_MAC"></p>
+  <a id="router_3"></a>
+  <p id="router_3_MAC"></p>
+  <hr>
+  <p id="server_1"></p>
+  <p id="server_1_MAC"></p>
+  <p id="server_2"></p>
+  <p id="server_2_MAC"></p>
+  <p id="server_3"></p>
+  <p id="server_3_MAC"></p>
+  <p id="server_4"></p>
+  <p id="server_4_MAC"></p>
+  <p id="server_5"></p>
+  <p id="server_5_MAC"></p>
+  <p id="server_6"></p>
+  <p id="server_6_MAC"></p>
+  <p id="server_7"></p>
+  <p id="server_7_MAC"></p>
+  <p id="server_8"></p>
+  <p id="server_8_MAC"></p>
+  <p id="server_9"></p>
+  <p id="server_9_MAC"></p>
+  <p id="server_10"></p>
+  <p id="server_10_MAC"></p>
+  <p id="server_11"></p>
+  <p id="server_11_MAC"></p>
+  <p id="server_12"></p>
+  <p id="server_12_MAC"></p>
+  <p id="server_13"></p>
+  <p id="server_13_MAC"></p>
+  <p id="server_14"></p>
+  <p id="server_14_MAC"></p>
+  <p id="server_15"></p>
+  <p id="server_15_MAC"></p>
+  <p id="server_16"></p>
+  <p id="server_16_MAC"></p>
+
+  <script>
+    function whereToGo() {
+      var ip = document.getElementById("myForm").myInput.value;
+      var res = document.getElementById("result");
+
+      fetch("data.json")
+        .then(response => response.json())
+        .then(json => {
+
+          var target_index;
+          for (let index = 0; index < json.servers.length; index++) {
+            const element = json.servers[index];
+            if (element.local_ip == ip) {
+              target_index = index + 1;
+              break
+            }
+          }
+
+          if (router == "A") {
+            if (target_index >= 31 && target_index <= 40) {
+              console.log(json.servers[target_index-1].mac)
+              res.innerHTML = json.servers[target_index-1].mac;
+            }
+            else if (target_index >= 11 && target_index <= 25 || target_index >= 41 && target_index <= 45 ) {
+              console.log(json.router[3].mac)
+              res.innerHTML = json.router[3].mac;
+            }
+            else if (target_index >= 1 && target_index <= 10 || target_index >= 26 && target_index <= 30 || target_index >= 46 && target_index <= 51) {
+              console.log(json.router[1].mac)
+              res.innerHTML = json.router[1].mac;
+            }
+          }
+
+          else if (router == "B") {
+            if (target_index >= 31 && target_index <= 35) {
+              console.log(json.router[0].mac)
+              res.innerHTML = json.router[0].mac;
+            }
+            else if (target_index >= 26 && target_index <= 30 || target_index >= 36 && target_index <= 40 || target_index >= 46 && target_index <= 51 ) {
+              console.log(json.servers[target_index-1].mac)
+              res.innerHTML = json.servers[target_index-1].mac;
+            }
+            else if (target_index >= 11 && target_index <= 25 || target_index >= 41 && target_index <= 45 ) {
+              console.log(json.router[3].mac)
+              res.innerHTML = json.router[3].mac;
+            }
+            else if (target_index >= 1 && target_index <= 10 ) {
+              console.log(json.router[2].mac)
+              res.innerHTML = json.router[2].mac;
+            }
+          }
+
+          else if (router == "C") {
+            if (target_index >= 1 && target_index <= 10 ) {
+              console.log(json.servers[target_index-1].mac)
+              res.innerHTML = json.servers[target_index-1].mac;
+            }
+          }
+
+          else if (router == "D") {
+            if (target_index >= 21 && target_index <= 25 || target_index >= 41 && target_index <= 45 ) {
+              console.log(json.servers[target_index-1].mac)
+              res.innerHTML = json.servers[target_index-1].mac;
+            }
+            else if (target_index >= 11 && target_index <= 20 ) {
+              console.log(json.router[4].mac)
+              res.innerHTML = json.router[4].mac;
+            }
+          }
+
+          else if (router == "E") {
+            if (target_index >= 11 && target_index <= 15 ) {
+              console.log(json.servers[target_index-1].mac)
+              res.innerHTML = json.servers[target_index-1].mac;
+            }
+            else if (target_index >= 16 && target_index <= 20 ) {
+              console.log(json.router[5].mac)
+              res.innerHTML = json.router[5].mac;
+            }
+          }
+
+          else if (router == "F") {
+            if (target_index >= 16 && target_index <= 20 ) {
+              console.log(json.servers[target_index-1].mac)
+              res.innerHTML = json.servers[target_index-1].mac;
+            }
+          }
+
+        });
+    }
+  </script>
+
+  <script>
+    var router_1 = document.getElementById('router_1');
+    var router_1_MAC = document.getElementById('router_1_MAC');
+    var router_2 = document.getElementById('router_2');
+    var router_2_MAC = document.getElementById('router_2_MAC');
+    var router_3 = document.getElementById('router_3');
+    var router_3_MAC = document.getElementById('router_3_MAC');
+
+    var myServer = [];
+    for (let index = 1; index <= 16; index++) {
+      var js = {
+        "main": document.getElementById('server_' + index.toString()),
+        "mac": document.getElementById('server_' + index.toString() + '_MAC')
+      }
+      myServer.push(js)
+    }
+
+    fetch("data.json")
+        .then(response => response.json())
+        .then(json => {
+          if (router == "A") {
+            router_1.innerHTML = json.router[1].name;
+            router_1.href = "/router.html?router=B";
+            router_1_MAC.innerHTML = json.router[1].mac;
+
+            router_2.innerHTML = json.router[3].name;
+            router_2.href = "/router.html?router=D";
+            router_2_MAC.innerHTML = json.router[3].mac;
+
+            var i = 0;
+            for (let index = 30; index < 40; index++) {
+              console.log(myServer[0].main.innerHTML)
+              myServer[i].main.innerHTML = json.servers[index].hostname;
+              myServer[i].mac.innerHTML = json.servers[index].mac;
+              i++;
+            }
+          }
+
+          else if (router == "B") {
+            router_1.innerHTML = json.router[0].name;
+            router_1.href = "/router.html?router=A";
+            router_1_MAC.innerHTML = json.router[0].mac;
+
+            router_2.innerHTML = json.router[2].name;
+            router_2.href = "/router.html?router=C";
+            router_2_MAC.innerHTML = json.router[2].mac;
+
+            router_3.innerHTML = json.router[3].name;
+            router_3.href = "/router.html?router=D";
+            router_3_MAC.innerHTML = json.router[3].mac;
+
+            var i = 0;
+            for (let index = 25; index < 30; index++) {
+              console.log(myServer[0].main.innerHTML)
+              myServer[i].main.innerHTML = json.servers[index].hostname;
+              myServer[i].mac.innerHTML = json.servers[index].mac;
+              i++;
+            }        
+
+            for (let index = 35; index < 40; index++) {
+              console.log(myServer[0].main.innerHTML)
+              myServer[i].main.innerHTML = json.servers[index].hostname;
+              myServer[i].mac.innerHTML = json.servers[index].mac;
+              i++;
+            }
+
+            for (let index = 45; index < 51; index++) {
+              console.log(myServer[0].main.innerHTML)
+              myServer[i].main.innerHTML = json.servers[index].hostname;
+              myServer[i].mac.innerHTML = json.servers[index].mac;
+              i++;
+            }
+          }
+
+          else if (router == "C") {
+            var i = 0;
+            for (let index = 0; index < 10; index++) {
+              console.log(myServer[0].main.innerHTML)
+              myServer[i].main.innerHTML = json.servers[index].hostname;
+              myServer[i].mac.innerHTML = json.servers[index].mac;
+              i++;
+            }        
+          }
+
+          else if (router == "D") {
+            router_1.innerHTML = json.router[4].name;
+            router_1.href = "/router.html?router=E";
+            router_1_MAC.innerHTML = json.router[4].mac;
+
+            var i = 0;
+            for (let index = 20; index < 25; index++) {
+              console.log(myServer[0].main.innerHTML)
+              myServer[i].main.innerHTML = json.servers[index].hostname;
+              myServer[i].mac.innerHTML = json.servers[index].mac;
+              i++;
+            }        
+
+            for (let index = 40; index < 45; index++) {
+              console.log(myServer[0].main.innerHTML)
+              myServer[i].main.innerHTML = json.servers[index].hostname;
+              myServer[i].mac.innerHTML = json.servers[index].mac;
+              i++;
+            }
+          }
+
+          else if (router == "E") {
+            router_1.innerHTML = json.router[5].name;
+            router_1.href = "/router.html?router=F";
+            router_1_MAC.innerHTML = json.router[5].mac;
+
+            var i = 0;
+            for (let index = 10; index < 15; index++) {
+              console.log(myServer[0].main.innerHTML)
+              myServer[i].main.innerHTML = json.servers[index].hostname;
+              myServer[i].mac.innerHTML = json.servers[index].mac;
+              i++;
+            }        
+          }
+
+          else if (router == "F") {
+            var i = 0;
+            for (let index = 15; index < 20; index++) {
+              console.log(myServer[0].main.innerHTML)
+              myServer[i].main.innerHTML = json.servers[index].hostname;
+              myServer[i].mac.innerHTML = json.servers[index].mac;
+              i++;
+            }        
+          }
+
+        });
+
+  </script>
+
+</body>
+</html
