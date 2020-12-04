@@ -1,258 +1,360 @@
 {
   "servers": [
     {
+      "#": 1,
       "hostname": "youtube.com",
-      "local_ip": "10.4.220.34",
+      "Host IP": "172.217.10.14",
+      "local_ip": "10.0.5.2",
       "mac": "19:48:df:a9:7f:6d"
     },
     {
+      "#": 2,
       "hostname": "apple.com",
-      "local_ip": "10.59.51.157",
+      "Host IP": "17.253.144.10",
+      "local_ip": "10.0.5.3",
       "mac": "f2:cf:85:cf:98:a9"
     },
     {
+      "#": 3,
       "hostname": "google.com",
-      "local_ip": "10.152.248.249",
+      "Host IP": "172.217.10.78",
+      "local_ip": "10.0.5.4",
       "mac": "7e:22:11:9b:01:a4"
     },
     {
+      "#": 4,
       "hostname": "microsoft.com",
-      "local_ip": "10.10.44.149",
+      "Host IP": "104.215.148.63",
+      "local_ip": "10.0.5.5",
       "mac": "b5:90:5f:f3:f1:96"
     },
     {
+      "#": 5,
       "hostname": "cloudflare.com",
-      "local_ip": "10.160.225.159",
+      "Host IP": "104.16.132.229",
+      "local_ip": "10.0.5.6",
       "mac": "f1:04:eb:99:be:14"
     },
     {
+      "#": 6,
       "hostname": "khaosod.co.th",
-      "local_ip": "10.93.246.13",
+      "Host IP": "172.67.203.26",
+      "local_ip": "10.0.6.2",
       "mac": "36:f2:72:71:8d:b4"
     },
     {
+      "#": 7,
       "hostname": "twitter.com",
-      "local_ip": "10.103.130.128",
+      "Host IP": "104.244.42.129",
+      "local_ip": "10.0.6.3",
       "mac": "bd:e1:81:56:0b:d8"
     },
     {
-      "hostname": "cloudflare.com",
-      "local_ip": "10.182.126.71",
+      "#": 8,
+      "hostname": "roblox.com",
+      "Host IP": "128.116.114.3",
+      "local_ip": "10.0.6.4",
       "mac": "ba:6f:43:34:de:dc"
     },
     {
+      "#": 9,
       "hostname": "linkedin.com",
-      "local_ip": "10.145.125.84",
+      "Host IP": "108.174.10.10",
+      "local_ip": "10.0.6.5",
       "mac": "cc:8c:76:69:cd:10"
     },
     {
+      "#": 10,
       "hostname": "adobe.com",
-      "local_ip": "10.108.241.70",
+      "Host IP": "192.147.130.204",
+      "local_ip": "10.0.6.6",
       "mac": "90:ea:83:e0:45:f1"
     },
     {
+      "#": 11,
       "hostname": "wordpress.org",
-      "local_ip": "10.32.238.105",
+      "Host IP": "198.143.164.252",
+      "local_ip": "10.0.8.2",
       "mac": "88:5e:f5:b2:83:de"
     },
     {
+      "#": 12,
       "hostname": "wikipedia.org",
-      "local_ip": "10.28.115.163",
+      "Host IP": "208.80.154.224",
+      "local_ip": "10.0.8.3",
       "mac": "fb:2a:b8:45:ca:7c"
     },
     {
+      "#": 13,
       "hostname": "mozilla.org",
-      "local_ip": "10.183.166.247",
+      "Host IP": "44.236.72.93",
+      "local_ip": "10.0.8.4",
       "mac": "35:4f:8b:b8:93:d1"
     },
     {
+      "#": 14,
       "hostname": "cytron.io",
-      "local_ip": "10.59.67.251",
+      "Host IP": "104.26.3.180",
+      "local_ip": "10.0.8.5",
       "mac": "ce:07:9e:e6:74:19"
     },
     {
+      "#": 15,
       "hostname": "lazada.co.th",
-      "local_ip": "10.64.16.182",
+      "Host IP": "47.89.75.205",
+      "local_ip": "10.0.8.6",
       "mac": "ac:ae:0f:4a:cd:0e"
     },
     {
+      "#": 16,
       "hostname": "pantip.com",
-      "local_ip": "10.213.79.142",
+      "Host IP": "139.99.68.204",
+      "local_ip": "10.0.7.2",
       "mac": "0a:de:7f:de:f0:77"
     },
     {
+      "#": 17,
       "hostname": "shopee.co.th",
-      "local_ip": "10.46.136.40",
+      "Host IP": "103.120.246.129",
+      "local_ip": "10.0.7.3",
       "mac": "dd:84:cd:c0:44:03"
     },
     {
+      "#": 18,
       "hostname": "ku.ac.th",
-      "local_ip": "10.188.175.55",
+      "Host IP": "158.108.216.5",
+      "local_ip": "10.0.7.4",
       "mac": "2b:99:d2:2c:0d:b0"
     },
     {
+      "#": 19,
       "hostname": "aliexpress.com",
-      "local_ip": "10.54.220.111",
+      "Host IP": "198.11.132.250",
+      "local_ip": "10.0.7.5",
       "mac": "f4:c6:a7:8b:2f:10"
     },
     {
+      "#": 20,
       "hostname": "vimeo.com",
-      "local_ip": "10.135.207.144",
+      "Host IP": "151.101.64.217",
+      "local_ip": "10.0.7.6",
       "mac": "f2:44:1e:bd:9d:fb"
     },
     {
+      "#": 21,
       "hostname": "cnn.com",
-      "local_ip": "10.158.133.147",
+      "Host IP": "151.101.129.67",
+      "local_ip": "10.0.10.2",
       "mac": "79:3c:9f:33:d9:19"
     },
     {
+      "#": 22,
       "hostname": "github.com",
-      "local_ip": "10.13.230.53",
+      "Host IP": "140.82.114.4",
+      "local_ip": "10.0.10.3",
       "mac": "20:28:ae:09:27:ae"
     },
     {
-      "hostname": "line.me",
-      "local_ip": "10.70.115.128",
+      "#": 23,
+      "hostname": "netflix.com",
+      "Host IP": "54.165.16.47",
+      "local_ip": "10.0.10.4",
       "mac": "a0:20:c4:26:83:94"
     },
     {
+      "#": 24,
       "hostname": "kaidee.com",
-      "local_ip": "10.94.73.20",
+      "Host IP": "18.139.187.77",
+      "local_ip": "10.0.10.5",
       "mac": "e9:09:fe:72:a3:f8"
     },
     {
+      "#": 25,
       "hostname": "samsung.com",
-      "local_ip": "10.12.219.173",
+      "Host IP": "211.45.27.231",
+      "local_ip": "10.0.10.6",
       "mac": "15:ba:06:37:03:f0"
     },
     {
+      "#": 26,
       "hostname": "facebook.com",
-      "local_ip": "10.24.36.249",
+      "Host IP": "157.240.0.35",
+      "local_ip": "10.0.4.2",
       "mac": "37:56:a4:b2:8f:1c"
     },
     {
+      "#": 27,
       "hostname": "agoda.com",
-      "local_ip": "10.23.9.229",
+      "Host IP": "103.6.182.20",
+      "local_ip": "10.0.4.3",
       "mac": "54:cc:dd:1e:2a:aa"
     },
     {
+      "#": 28,
       "hostname": "bbc.co.uk",
-      "local_ip": "10.24.211.202",
+      "Host IP": "151.101.0.81",
+      "local_ip": "10.0.4.4",
       "mac": "24:92:ab:04:96:7d"
     },
     {
+      "#": 29,
       "hostname": "amazon.com",
-      "local_ip": "10.25.97.245",
+      "Host IP": "176.32.103.205",
+      "local_ip": "10.0.4.5",
       "mac": "34:7d:a8:72:0d:55"
     },
     {
+      "#": 30,
       "hostname": "line.me",
-      "local_ip": "10.29.15.84",
+      "Host IP": "203.104.138.138",
+      "local_ip": "10.0.4.6",
       "mac": "c1:b0:b3:a9:88:67"
     },
     {
+      "#": 31,
       "hostname": "vk.com",
-      "local_ip": "10.30.41.242",
+      "Host IP": "87.240.190.78",
+      "local_ip": "10.0.1.2",
       "mac": "75:7e:bc:08:e8:21"
     },
     {
+      "#": 32,
       "hostname": "paypal.com",
-      "local_ip": "10.19.120.46",
+      "Host IP": "64.4.250.37",
+      "local_ip": "10.0.1.3",
       "mac": "25:b5:7a:86:b1:75"
     },
     {
+      "#": 33,
       "hostname": "sanook.com",
-      "local_ip": "10.28.27.224",
+      "Host IP": "203.151.133.212",
+      "local_ip": "10.0.1.4",
       "mac": "c7:01:00:2b:6d:0d"
     },
     {
+      "#": 34,
       "hostname": "msn.com",
-      "local_ip": "10.16.222.245",
+      "Host IP": "13.82.28.61",
+      "local_ip": "10.0.1.5",
       "mac": "e0:3d:98:1e:c6:1e"
     },
     {
+      "#": 35,
       "hostname": "dek-d.com",
-      "local_ip": "10.28.52.142",
+      "Host IP": "61.47.47.112",
+      "local_ip": "10.0.1.6",
       "mac": "45:ec:02:82:09:22"
     },
     {
+      "#": 36,
       "hostname": "instagram.com",
-      "local_ip": "10.16.250.160",
+      "Host IP": "3.226.99.60",
+      "local_ip": "10.0.2.3",
       "mac": "eb:9a:76:a2:3b:93"
     },
     {
+      "#": 37,
       "hostname": "whatsapp.com",
-      "local_ip": "10.18.246.59",
+      "Host IP": "31.13.66.56",
+      "local_ip": "10.0.2.4",
       "mac": "93:87:1b:53:f2:3d"
     },
     {
+      "#": 38,
       "hostname": "thairath.co.th",
-      "local_ip": "10.28.132.227",
+      "Host IP": "167.114.156.121",
+      "local_ip": "10.0.2.5",
       "mac": "df:e6:0c:96:a7:51"
     },
     {
+      "#": 39,
       "hostname": "pinterest.com",
-      "local_ip": "10.26.232.139",
+      "Host IP": "151.101.0.84",
+      "local_ip": "10.0.2.6",
       "mac": "2e:e5:99:57:ee:86"
     },
     {
+      "#": 40,
       "hostname": "opera.com",
-      "local_ip": "10.25.235.158",
+      "Host IP": "185.26.182.104",
+      "local_ip": "10.0.2.7",
       "mac": "c5:8d:1d:66:d3:e2"
     },
     {
+      "#": 41,
       "hostname": "tiktok.com",
-      "local_ip": "10.30.137.43",
+      "Host IP": "130.44.212.184",
+      "local_ip": "10.0.9.3",
       "mac": "76:19:6c:59:29:62"
     },
     {
+      "#": 42,
       "hostname": "yahoo.com",
-      "local_ip": "10.29.140.246",
+      "Host IP": "74.6.231.20",
+      "local_ip": "10.0.9.4",
       "mac": "d6:e7:69:0c:5b:3e"
     },
     {
+      "#": 43,
       "hostname": "imdb.com",
-      "local_ip": "10.21.124.120",
+      "Host IP": "52.94.225.248",
+      "local_ip": "10.0.9.5",
       "mac": "c8:2b:8d:a4:f3:40"
     },
     {
+      "#": 44,
       "hostname": "wongnai.com",
-      "local_ip": "10.28.227.25",
+      "Host IP": "52.76.114.113",
+      "local_ip": "10.0.9.6",
       "mac": "b5:09:62:ef:3f:25"
     },
     {
+      "#": 45,
       "hostname": "reuters.com",
-      "local_ip": "10.25.132.76",
+      "Host IP": "52.2.61.110",
+      "local_ip": "10.0.9.7",
       "mac": "bb:8b:62:82:02:35"
     },
     {
+      "#": 46,
       "hostname": "viu.com",
-      "local_ip": "10.22.223.203",
+      "Host IP": "13.226.38.91",
+      "local_ip": "10.0.3.2",
       "mac": "50:93:f8:aa:00:6c"
     },
     {
+      "#": 47,
       "hostname": "w3.org",
-      "local_ip": "10.26.239.229",
+      "Host IP": "128.30.52.100",
+      "local_ip": "10.0.3.3",
       "mac": "6e:e7:1d:4c:3b:47"
     },
     {
-      "hostname": "reuters.com",
-      "local_ip": "10.22.85.203",
+      "#": 48,
+      "hostname": "matichon.co.th",
+      "Host IP": "104.27.204.89",
+      "local_ip": "10.0.3.4",
       "mac": "5c:d4:82:27:fd:6f"
     },
     {
+      "#": 49,
       "hostname": "gstatic.com",
-      "local_ip": "10.17.46.31",
+      "Host IP": "172.217.7.3",
+      "local_ip": "10.0.3.5",
       "mac": "87:0c:98:ce:2e:52"
     },
     {
+      "#": 50,
       "hostname": "mail.google.com",
-      "local_ip": "10.30.135.69",
+      "Host IP": "172.217.10.101",
+      "local_ip": "10.0.3.6",
       "mac": "18:f2:10:67:43:8c"
     },
     {
+      "#": 51,
       "hostname": "cpe.ku.ac.th",
-      "local_ip": "10.16.29.72",
+      "Host IP": "158.108.32.150",
+      "local_ip": "10.0.3.7",
       "mac": "8b:aa:aa:55:8b:ae"
     }
   ],
